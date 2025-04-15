@@ -1,21 +1,57 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+title: "Yufan Zheng_Academic profile"
+baseURL: "https://yufanivanzheng.github.io/"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+theme: ["wowchemy"]
 
-# Website name
-title: Yufan Zheng_academic profile
-# Website URL
-baseURL: 'https://yufanzheng_academic profile.com/'
+menu:
+  main:
+   - name: About
+     url: '#about'
+     weight: 10
+   - name: Publications
+     url: '#publications'
+     weight: 20
+   - name: Projects
+     url: '#projects'
+     weight: 30
+   - name: Contact
+     url: '#contact'
+     weight: 40
 
-############################
-## LANGUAGE
-############################
+module:
+imports:
+- path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
+params:
+name: "Yufan (Ivan) Zheng"
+role: "Postdoctoral Fellow"
+organization: "National Institutes of Allergic and Infectious Diseases"
+location: "Bethesda, MD, US"
+
+email: "ivanyufanzheng@email.com"
+phone: "+86 301 906 8663"
+
+social:
+- icon: academic
+icon_pack: fas
+link: "/cv.pdf"
+- icon: envelope
+icon_pack: fas
+link: "mailto:your@email.com"
+- icon: github
+icon_pack: fab
+link: "https://github.com/YufanIvanZheng"
+- icon: linkedin
+icon_pack: fab
+link: "https://www.linkedin.com/in/YufanIvanZheng"
+
+homepage:
+sections:
+- about
+- publications
+- projects
+- contact
 
 ############################
 ## ADVANCED
